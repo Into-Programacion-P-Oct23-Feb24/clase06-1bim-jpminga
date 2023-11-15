@@ -16,6 +16,7 @@ public class Ejemplo02 {
         
         pais = "Ecuador";
         char letra = pais.charAt(0);
+        // El metodo char sirve para selecionar un caracter 
         System.out.printf("%s\n", letra);
         
     }
