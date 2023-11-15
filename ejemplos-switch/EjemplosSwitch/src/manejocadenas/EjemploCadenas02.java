@@ -14,16 +14,20 @@ import java.util.Scanner;
  */
 public class EjemploCadenas02 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in); 
+        // Esta linea de codigo permite ingresar datos por teclado
         entrada.useLocale(Locale.US);
+        // Esta linea de codigo nos permite estandarizar el punto con decimal
         String cadenaFinal = "Datos Ingresados\n";
-        
+        // Te presenta en pantalla los datos asignados
         System.out.println("Ingrese la ciudad");
+        // Te permite ingresar por teclado la ciudad
         String ciudad = entrada.nextLine(); // Quito
-        
+
         
         cadenaFinal = String.format("%sCiudad:%s\n",
                 cadenaFinal, ciudad);
+        // System.out.printf("%s\n", cadenaFinal)
         
         System.out.println("Ingrese la provincia");
         String provincia = entrada.nextLine(); // 
@@ -31,7 +35,7 @@ public class EjemploCadenas02 {
         cadenaFinal = String.format("%sProvincia:%s\n",  
                 cadenaFinal,
                 provincia);
-        
+        // String.format() funciona como printf
         System.out.println("Ingrese la país");
         String pais = entrada.nextLine(); // 
         
